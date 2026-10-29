@@ -405,7 +405,90 @@ nav .logo span {
                 grid-template-columns: 1fr;
                 gap: 2rem;
             }
-        }
+        }/* Updated Contact Section Styles */
+.contact-subtitle {
+    text-align: center;
+    color: #666;
+    margin-top: -2rem;
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+}
+
+.contact-social-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.social-contact-card {
+    background: white;
+    padding: 2.5rem 2rem;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.06);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid transparent;
+}
+
+.social-contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 50px rgba(210, 105, 30, 0.15);
+    border-color: #D2691E;
+}
+
+.social-contact-card .service-icon {
+    font-size: 2.8rem;
+    color: #D2691E;
+    margin-bottom: 1rem;
+    transition: color 0.3s ease;
+}
+
+.insta-card:hover .service-icon {
+    color: #E1306C; /* Instagram brand color on hover */
+}
+
+.tiktok-card:hover .service-icon {
+    color: #000000; /* TikTok brand color on hover */
+}
+
+.social-contact-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #8B4513;
+    margin-bottom: 0.8rem;
+}
+
+.social-contact-card p {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+}
+
+.card-action-btn {
+    margin-top: auto;
+    font-weight: 600;
+    color: #D2691E;
+    font-size: 0.9rem;
+    transition: letter-spacing 0.3s ease;
+}
+
+.social-contact-card:hover .card-action-btn {
+    letter-spacing: 0.5px;
+}
+
+.location-tag {
+    margin-top: 0.5rem;
+    font-weight: 600;
+    color: #8B4513 !important;
+}
+
         
 
         
