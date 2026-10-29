@@ -14,7 +14,7 @@
         <nav>
     
 <a href="#home" class="logo">
-    <img src="" alt="">
+    <img src="images/logo.png" alt="">
     <span>Henna by Syeda</span>
 </a>
 
@@ -141,3 +141,26 @@
                 </div>
                 <div class="contact-item">
                     <i class="fas fa-map-marker-alt
+"></i>
+                    <div>
+                        <h4>Location</h4>
+                        <p>Karachi, Pakistan</p>
+                    </div>
+                </div>
+            </div>
+            <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
+            </body>
+</html>
